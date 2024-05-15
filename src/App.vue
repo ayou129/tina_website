@@ -1,4 +1,3 @@
-<!-- src/App.vue -->
 <template>
   <a-layout class="layout" id="app-layout">
     <a-layout-header class="header">
@@ -19,7 +18,7 @@
       </div>
     </a-layout-content>
     <a-layout-footer class="footer">
-      尤礼科技 ©2024 | 粤ICP备2024248197号-1
+      尤礼科技 ©2024 | <a href="https://beian.miit.gov.cn/">粤ICP备2024248197号-1</a>
     </a-layout-footer>
   </a-layout>
 </template>
@@ -44,7 +43,7 @@ export default {
 .layout {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Set the height of the layout to full viewport height */
+  height: 100vh;
 }
 
 .header {
@@ -71,7 +70,7 @@ export default {
 .site-layout-content {
   padding: 100px;
   text-align: center;
-  flex-grow: 1; /* Allows the content area to grow and fill available space */
+  flex-grow: 1;
 }
 
 a-layout-content {
@@ -82,6 +81,10 @@ a-layout-content {
 .footer {
   text-align: center;
   width: 100%;
-  padding: 10px 0; /* Add padding for visual comfort */
+  padding: 10px 0;
+}
+
+.footer a {
+  color: inherit;
 }
 </style>

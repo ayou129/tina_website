@@ -6,6 +6,11 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 
 - [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
 
+docker build . \
+ --platform linux/amd64 \
+ -t ccr.ccs.tencentyun.com/ayou129_app/youli_guanwang:4
+
+docker push ccr.ccs.tencentyun.com/ayou129_app/youli_guanwang:4
 
 我正在使用vite和ant-design-vue库开发一个企业网站首页
 
